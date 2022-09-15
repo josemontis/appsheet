@@ -6,9 +6,10 @@ AND
 )
 
 
-¿Están permitidas las actualizaciones??
+Para que se muestren segun el role??
 SWITCH(LOOKUP(USEREMAIL(), "Users", "UserEmail", "UserRole"), 
   "ADMIN", "ALL_CHANGES", 
+  "ad2", "READ_ONLY",
   "READ_ONLY")
 
 
