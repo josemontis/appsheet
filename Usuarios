@@ -1,10 +1,10 @@
-mostrar si
+Show if
 AND
 (
     LOOKUP(USEREMAIL(), "Users", "UserEmail", "UserActive") = "TRUE"
-    ,IN(LOOKUP(USEREMAIL(), "Users", "UserEmail", "UserRole"), { "ADMIN", "SALES" })
+    ,IN(LOOKUP(USEREMAIL(), "Users", "UserEmail", "UserRole"), { "ADMIN" })
 )
-
+ 
 
 Para que se muestren segun el role??
 SWITCH(LOOKUP(USEREMAIL(), "Users", "UserEmail", "UserRole"), 
